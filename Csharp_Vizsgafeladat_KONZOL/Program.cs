@@ -20,9 +20,6 @@ namespace Csharp_Vizsgafeladat_KONZOL
             adatbazisBeolvasas();
 
 
-            Console.WriteLine("");
-
-
             Console.ForegroundColor = ConsoleColor.White;
             /*AZ EGÉSZ LISTA KIIRATÁSA: PRÓBÁBÓL */
             /*
@@ -31,7 +28,6 @@ namespace Csharp_Vizsgafeladat_KONZOL
                 Console.WriteLine(adat.nev);
             }
             */
-
 
 
             Console.ForegroundColor = ConsoleColor.Green;
