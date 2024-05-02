@@ -17,27 +17,104 @@ namespace Csharp_Vizsgafeladat_KONZOL
 
     static void Main(string[] args)
         {
-            beolvasas();
+            adatbazisBeolvasas();
 
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Az adatbázis beolvasása!");
+
+
+
             Console.ForegroundColor = ConsoleColor.White;
-
+            /*AZ EGÉSZ LISTA KIIRATÁSA: PRÓBÁBÓL */
+            /*
             foreach (Epulet adat in epuletek)
             {
                 Console.WriteLine(adat.nev);
             }
+            */
 
 
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Az adatbázis beolvasása KÉSZ!\n");
+
+            /*1. feladat:*/
+            /*mennyi épület adata lett beolvasva?   /segítség: adatok.count */
+            feladat001();
+
+            /*2. feladat:*/
+            /* mennyi olyan élület van, amelyik neve nem tartalmazza a "Tower" szót?*/
+            feladat002();
+
+
+            /*3. feladat: */
+            /* Készítsetek egy új metódust TutiEpulet() néven az Epulet osztályban,
+             * amely egy logikai értékkel tér vissza attól függően, hogy az épület 500 m-nél
+             * magasabb és 100 emelettel többel rendelkezik-e?
+             */
+            // el lett készítve az Epulet.cs osztály és abban a kód kész! 
             
             
-            Console.WriteLine();
+            
+            
+            /*4. feladat: */
+            feladat004();
 
             Console.ReadKey();
         }
 
-        private static void beolvasas()
+
+        private static void feladat004()
+        {
+            Console.Write("Kérek egy évszámot: ");
+            int adatBekeres = int.Parse(Console.ReadLine());
+            decimal osszMagassag = 0;
+
+            foreach (Epulet adat in epuletek)
+            {
+                if (adatBekeres > adat.epitesEve)
+                {
+                    osszMagassag = osszMagassag + adat.epitesEve;
+                }
+            }
+            Console.WriteLine($"A megadott évszámunk: {adatBekeres}");
+            Console.WriteLine($"Az épületek összmagassága: {osszMagassag}");
+        }
+
+
+
+
+        private static void feladat002()
+        {
+            int towerSzo = 0;
+
+            foreach(Epulet adat in epuletek)
+            {
+                if (!adat.nev.Contains("Tower"))
+                {
+                    towerSzo++;
+                }
+            }
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write($"Az épületek száma, ami NEM tartalmazza a TOWER szót!: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"{towerSzo}");
+        }
+
+
+
+        private static void feladat001()
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write($"A beolvasott épületek száma: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"{epuletek.Count}");
+        }
+
+
+
+
+
+        private static void adatbazisBeolvasas()
         {
             using (StreamReader sr = new StreamReader("100_tallest_javitott4.csv"))
             {

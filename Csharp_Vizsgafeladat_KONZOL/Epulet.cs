@@ -19,6 +19,17 @@ namespace Csharp_Vizsgafeladat_KONZOL
         public int epitesEve;
 
 
+        public bool TutiEpulet()
+        {
+            bool statusz = false;
+
+            if (magassag_meter > 500 && emeletekSzama > 100)
+            {
+                statusz = true;
+            }
+          return statusz;
+        }
+
         //konstruktor generálása
         public Epulet(int rang, string nev, string varos_orszag, decimal magassag_meter, int magassag_lab, int emeletekSzama, int epitesEve)
         {
