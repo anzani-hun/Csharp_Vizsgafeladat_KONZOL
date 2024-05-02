@@ -20,7 +20,7 @@ namespace Csharp_Vizsgafeladat_KONZOL
             adatbazisBeolvasas();
 
 
-
+            Console.WriteLine("");
 
 
             Console.ForegroundColor = ConsoleColor.White;
