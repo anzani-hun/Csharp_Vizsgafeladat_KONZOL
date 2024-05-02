@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33927.289
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csharp_Vizsgafeladat_KONZOL", "Csharp_Vizsgafeladat_KONZOL\Csharp_Vizsgafeladat_KONZOL.csproj", "{474EC378-BD08-4475-8BA3-937CE461770F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{474EC378-BD08-4475-8BA3-937CE461770F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{474EC378-BD08-4475-8BA3-937CE461770F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{474EC378-BD08-4475-8BA3-937CE461770F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{474EC378-BD08-4475-8BA3-937CE461770F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {946D5F45-7376-4063-9304-B63C86DA0B8B}
+	EndGlobalSection
+EndGlobal
