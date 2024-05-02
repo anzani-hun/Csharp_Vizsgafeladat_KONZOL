@@ -10,6 +10,7 @@ namespace Csharp_Vizsgafeladat_KONZOL
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
